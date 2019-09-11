@@ -1,0 +1,17 @@
+{
+  "name": "poc-react-fwsales",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:vmarcosp/fw-react-integration.git",
+  "author": "Marcos Oliveira <vmarcosp.pereira@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "express": "^4.17.1",
+    "ejs": "^2.5.7"
+  },
+  "scripts": {
+    "v1": "node server-v1/index.js",
+    "v2": "node server-v2/index.js"
+  }
+}

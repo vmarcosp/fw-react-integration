@@ -9,7 +9,7 @@ app.set('view engine', 'ejs');
 let initialValue = 0
 
 router.get('/', (_, res) =>
-  res.render('pages/index', {
+  res.render(path.join(__dirname, 'views', 'pages/index'), {
     user: `Count: ${initialValue++}`
   })
 )

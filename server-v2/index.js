@@ -1,4 +1,5 @@
 const fs = require('fs')
+const path = require('path')
 const browserSync = require('browser-sync').create();
 
 browserSync.init({
@@ -6,7 +7,7 @@ browserSync.init({
 })
 
 
-fs.watchFile('frontend.js', { interval: 500 }, () => {
+fs.watchFile(path.join(__dirname, 'frontend.js'), { interval: 500 }, () => {
   console.log('Dispatching reload...')
   browserSync.reload()
 });
